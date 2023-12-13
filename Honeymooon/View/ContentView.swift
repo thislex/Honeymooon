@@ -10,11 +10,15 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - PROPERTIES
     
+    @State var showAlert: Bool = false
+    @State var showGuide: Bool = false
+    @State var showInfo: Bool = false
+    
     // MARK: - BODY
     
     var body: some View {
         VStack {
-            HeaderView()
+            HeaderView(showGuideView: $showGuide, showInfoView: $showInfo)
             
             Spacer()
             
@@ -23,10 +27,14 @@ struct ContentView: View {
             
             Spacer()
             
-            FooterView()
+            FooterView(showBookingAlert: $showAlert)
+        } //: VSTACK
+        .alert("Wishing a lovely and most precious of the times together for the amazing couple.", isPresented: $showAlert) {
+            Button("Happy Honeymoon!", role: .cancel) { }
         }
     }
 }
+
 
 // MARK: - PREVIEW
 
