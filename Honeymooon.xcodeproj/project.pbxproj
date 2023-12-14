@@ -25,6 +25,9 @@
 		7FE106E82B29BEA90079208E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106E72B29BEA90079208E /* InfoView.swift */; };
 		7FE106EA2B29BF470079208E /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106E92B29BF470079208E /* TitleModifier.swift */; };
 		7FE106ED2B29C0D10079208E /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106EC2B29C0D10079208E /* ButtonModifier.swift */; };
+		7FE106EF2B2B03E10079208E /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106EE2B2B03E10079208E /* SymbolModifier.swift */; };
+		7FE106F22B2B097D0079208E /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106F12B2B097D0079208E /* CardTransition.swift */; };
+		7FE106F52B2B0C300079208E /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106F42B2B0C300079208E /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		7FE106E72B29BEA90079208E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		7FE106E92B29BF470079208E /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		7FE106EC2B29C0D10079208E /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonModifier.swift; path = Honeymooon/View/ButtonModifier.swift; sourceTree = SOURCE_ROOT; };
+		7FE106EE2B2B03E10079208E /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = SOURCE_ROOT; };
+		7FE106F12B2B097D0079208E /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		7FE106F42B2B0C300079208E /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		7F31649F2B28625000549D0D /* Honeymooon */ = {
 			isa = PBXGroup;
 			children = (
+				7FE106F32B2B0C160079208E /* Helper */,
+				7FE106F02B2B09540079208E /* Extension */,
 				7FE106EB2B29BFA20079208E /* Modifier */,
 				7F3164C22B2879B100549D0D /* Component */,
 				7F3164BB2B28693F00549D0D /* View */,
@@ -151,10 +159,27 @@
 		7FE106EB2B29BFA20079208E /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
+				7FE106EE2B2B03E10079208E /* SymbolModifier.swift */,
 				7FE106EC2B29C0D10079208E /* ButtonModifier.swift */,
 				7FE106E92B29BF470079208E /* TitleModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		7FE106F02B2B09540079208E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FE106F12B2B097D0079208E /* CardTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FE106F32B2B0C160079208E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7FE106F42B2B0C300079208E /* PlaySound.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +259,12 @@
 				7FE106E82B29BEA90079208E /* InfoView.swift in Sources */,
 				7F3164C12B28727D00549D0D /* FooterView.swift in Sources */,
 				7FE106EA2B29BF470079208E /* TitleModifier.swift in Sources */,
+				7FE106F22B2B097D0079208E /* CardTransition.swift in Sources */,
+				7FE106EF2B2B03E10079208E /* SymbolModifier.swift in Sources */,
 				7F3164BF2B286D5C00549D0D /* HeaderView.swift in Sources */,
 				7F3164B62B28683900549D0D /* HoneymoonModel.swift in Sources */,
 				7FE106ED2B29C0D10079208E /* ButtonModifier.swift in Sources */,
+				7FE106F52B2B0C300079208E /* PlaySound.swift in Sources */,
 				7F3164C42B2879DA00549D0D /* HeaderComponent.swift in Sources */,
 				7F3164A32B28625000549D0D /* ContentView.swift in Sources */,
 				7F3164A12B28625000549D0D /* HoneymooonApp.swift in Sources */,
